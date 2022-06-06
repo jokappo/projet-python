@@ -1,0 +1,51 @@
+psql -U postgres
+
+CREATE DATABASE bibliotheque;
+
+
+insert into categories values
+( 1, 'Conte'),
+(2, 'Policier'),
+(3, 'Harlequin'),
+(4, 'Fixion'),
+(5, 'Science'),
+(6, 'Policier'),
+(7, 'Conte'),
+(8, 'Fixion'),
+(9, 'Science'),
+(10, 'Policier'),
+(11, 'Harlequin'),
+(12, 'Conte'),
+(13, 'Science'),
+(14, 'Policier'),
+(15, 'Fixion');
+
+
+INSERT INTO  livres VALUES
+(3, 2100000,   'CAMARA LAYE',  '03/02/2001',  'Enfant Noire', 'Flammarion', 1),
+(4, 2000000, 'LA CHEVRE DE MA MERE', '03/02/2002', 'RICARDO KARMIAMA', 'Flammarion', 2),
+(5, 3000000, 'LES 21 SECRETS DE LA REUSSITE EN AFFAIRES', '03/02/2003',  'ALIKO DANGOTE', ' Les Editions le Maitre', 3),
+(6, 4000000, 'SIENCE DE LA RICHESSE', '03/02/2004',  'GILLE GAUTIER', 'Flammarion', 3),
+(7, 5000000, 'Le Quadrant du CASHFLOW', '03/02/2005', 'Robert T. Kiyosaki', 'Flammarion', 4),
+(8, 6000000, 'CAMARA LAYE', '03/02/2006',  ' Robert T. Kiyosaki', ' BEST-SELLERS', 5),
+(9, 7000000, 'REIVEILLE SPIRITUEL','03/02/2007', 'Marcello J. TUNASI', 'Flammarion', 6),
+(10,8000000, 'PERE RICHE PERE PAUVRE', '03/02/2008', 'ROBERT KIYOSAKY', 'TechPress,', 7),
+(11,9000000, 'EDUCATION DES JEUNES FILLES', '03/02/2009', 'LA GRANDE ROYALE', 'Flammarion', 8),
+(12,1000000, 'AMOUR IMPOSSIBLE', '03/02/2010', 'EBINTO MURIELLE', 'Flammarion', 7),
+(13, 1200000, 'LA DOTE', '03/02/2011', 'WOLEY SOYINKA', 'Flammarion', 1),
+(14, 1300000, 'SINPHONIE PASTORALE', '03/02/2012', 'ANDRE GIDE', 'Flammarion', 5),
+(15, 1400000, 'UN DEPART DOULOUREUX', '03/02/2013', 'CAMARA LAYE', 'Flammarion', 3),
+(16, 1500000, 'LA MORT DU CHEF', '03/02/2014', 'ESSAZAM', 'Flammarion', 3),
+(17, 1600000, 'CANDIDE', '03/02/2015','VOLTAIRE', 'Flammarion', 4),
+(18, 1700000, 'MA MERE', '03/02/2016', 'Enfant Noire', 'Flammarion', 2),
+(19, 1800000, 'LA RENTREE', '03/02/2017', 'CAMARA LAYE', 'Flammarion', 1),
+(20, 1900000, 'LE LABOUREUR ET SES ENFANTS', '03/02/2018', 'JEANS LA FONTAINE', 'Flammarion', 1);
+
+
+
+from datetime import datetime 
+def get_timestamp(): 
+          return datetime.now().strftime(("%Y-%m-%d %H:%M:%S")) 
+
+
+
